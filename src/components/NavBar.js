@@ -1,38 +1,48 @@
 import React, { Component } from 'react';
-import { Switch } from 'react-router-dom'
-import { BrowserRouter as Router, Route} from 'react-router-dom'
-import AboutMe from './about_me.js'
-import Blogs from './blogs.js'
-import Contact from './contact_me.js'
-import Projects from './projects.js'
+import { withRouter } from "react-router";
 
 class NavBar extends Component {
+
+  goToAboutMe = () => {
+    this.props.history.push("/about")
+  }
+
+  goToProjects = () => {
+    this.props.history.push("/projects")
+  }
+
+  goToBlogs = () => {
+    this.props.history.push("/blogs")
+  }
+
+  goToContact = () => {
+    this.props.history.push("/contact")
+  }
+
   render(){
     return(
-      <Router>
-        <div className="navbar-container">
-          <div className="radios">
-            <label>
-              <input type="radio" className="radio" name="answer"/>
-              <span>About Me</span>
-            </label>
-            <label>
-              <input type="radio" className="radio" name="answer"/>
-              <span>Projects</span>
-            </label>
-            <label>
-              <input type="radio" className="radio" name="answer"/>
-              <span>Blogs</span>
-            </label>
-            <label>
-              <input type="radio" className="radio" name="answer"/>
-              <span>Contact</span>
-            </label>
-          </div>
+      <div className="navbar-container">
+        <div className="radios">
+          <label>
+            <input type="radio" className="radio" name="answer"/>
+            <span onClick={this.goToAboutMe}>About Me</span>
+          </label>
+          <label>
+            <input type="radio" className="radio" name="answer"/>
+            <span onClick={this.goToProjects}>Projects</span>
+          </label>
+          <label>
+            <input type="radio" className="radio" name="answer"/>
+            <span onClick={this.goToBlogs}>Blogs</span>
+          </label>
+          <label>
+            <input type="radio" className="radio" name="answer"/>
+            <span onClick={this.goToContact}>Contact</span>
+          </label>
         </div>
-      </Router>
+      </div>
     )
   }
 }
 
-export default NavBar
+export default withRouter(NavBar)
