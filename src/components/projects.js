@@ -3,7 +3,9 @@ import React from 'react'
 const Projects = () => {
   return(
     <div>
-      <p>projects page</p>
+      <div className="titles">
+        <label>Projects</label>
+      </div>
     </div>
   )
 }

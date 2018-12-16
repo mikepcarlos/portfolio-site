@@ -37,8 +37,8 @@ body {
 
 .sprite-man {
   position: relative;
-  width: 120%;
-  margin-top: 30vh;
+  width: 160%;
+  margin-top: 25vh;
   /* margin-left: 10vw; */
 }
 
@@ -147,7 +147,32 @@ body {
   border-color: #212529;
   border-style: solid;
   padding: 1rem 1rem;
-  line-height: 8vh;
+  line-height: 6vh;
+  background-color: white;
+  border-radius: 4px;
+  /* margin-left: 52vw; */
+  /* justify-content: flex-end; */
+}
+
+.other-navbar-container {
+  display: inline-block;
+  float: right;
+  padding-right: 0.5rem;
+  padding-top: 6rem;
+  /* margin-left: 50vw; */
+  /* height: 0; */
+  /* margin-left: 210px; */
+}
+
+.other-radios {
+  /* position: fixed; */
+  /* position: relative; */
+  display: flex;
+  flex-direction: column;
+  border-color: #212529;
+  border-style: solid;
+  padding: 1rem 1rem;
+  line-height: 6vh;
   background-color: white;
   border-radius: 4px;
   /* margin-left: 52vw; */
@@ -219,18 +244,101 @@ body {
     border-color: #212529;
     border-style: solid;
     padding: 1rem 1rem;
-    line-height: 6vh;
+    line-height: 4.5vh;
     background-color: white;
     border-radius: 4px;
     /* margin-left: 52vw; */
     /* justify-content: flex-end; */
   }
 
-  /* .radios span {
-    color: white;
-  } */
+  .other-navbar-container {
+    padding-top: 2rem;
+    position: fixed;
+    right: 0;
+    left: 0;
+    height: 26.1vh;
+    margin-right: auto;
+    margin-left: auto;
+    min-height: 10em;
+    width: 100%;
+    bottom: 0;
+  }
+
+  .other-radios {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* justify-content: space-between; */
+    border: 3px outset #212529;
+    padding: 1rem 1rem;
+    line-height: 6vh;
+    background-color: white;
+    border-radius: 4px;
+    bottom: 0;
+  }
+
+  .other-radios span {
+    /* border-right: solid black; */
+    /* padding-right: 2%; */
+  }
 
   /* ################################################### */
+
+}
+
+/* pixel 2 */
+
+@media screen and (min-width: 410px) and (min-height: 730px) {
+
+  .other-navbar-container {
+    padding-top: 2rem;
+    position: fixed;
+    right: 0;
+    left: 0;
+    height: 26.1vh;
+    margin-right: auto;
+    margin-left: auto;
+    min-height: 10em;
+    width: 100%;
+    bottom: 0;
+  }
+
+  .other-radios {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 3px outset #212529;
+    padding: 1rem 1rem;
+    line-height: 6vh;
+    background-color: white;
+    border-radius: 4px;
+    bottom: 0;
+  }
+
+}
+
+/* pixel 2 XL */
+
+@media screen and (min-width: 410px) and (min-height: 820px) {
+
+  .other-radios {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* justify-content: space-between; */
+    border: 3px outset #212529;
+    padding: 1rem 1rem;
+    line-height: 6vh;
+    background-color: white;
+    border-radius: 4px;
+    bottom: 0;
+  }
 
 }
 
@@ -291,18 +399,67 @@ body {
     border-color: #212529;
     border-style: solid;
     padding: 1rem 1rem;
-    line-height: 5vh;
+    line-height: 4vh;
     background-color: white;
     border-radius: 4px;
     /* margin-left: 52vw; */
     /* justify-content: flex-end; */
   }
 
-  /* .radios span {
-    color: white;
-  } */
+  .other-navbar-container {
+    padding-top: 2rem;
+    position: fixed;
+    right: 0;
+    left: 0;
+    height: 0;
+    margin-right: auto;
+    margin-left: auto;
+    min-height: 10em;
+    width: 100%;
+    bottom: 0;
+  }
+
+  .other-radios {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* justify-content: space-between; */
+    border: 3px outset #212529;
+    padding: 1rem 1rem;
+    line-height: 6vh;
+    background-color: white;
+    border-radius: 4px;
+    bottom: 0;
+  }
+
+  .other-radios span {
+    font-size: 80%;
+  }
 
   /* ################################################### */
+
+}
+
+/* iphone 6/7/8 */
+
+@media screen and (min-width: 370px) and (min-height: 660px) {
+
+  .other-radios {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* justify-content: space-between; */
+    border: 3px outset #212529;
+    padding: 1rem 1rem;
+    line-height: 6vh;
+    background-color: white;
+    border-radius: 4px;
+    bottom: 0;
+  }
 
 }
 
@@ -363,17 +520,41 @@ body {
     border-color: #212529;
     border-style: solid;
     padding: 1rem 1rem;
-    line-height: 10vh;
+    line-height: 8vh;
     background-color: white;
     border-radius: 4px;
     /* margin-left: 52vw; */
     /* justify-content: flex-end; */
   }
 
-  /* .radios span {
-    color: white;
-  } */
+  .other-navbar-container {
+    padding-top: 2rem;
+    position: fixed;
+    right: 0;
+    left: 0;
+    height: 23vh;
+    margin-right: auto;
+    margin-left: auto;
+    min-height: 10em;
+    width: 100%;
+    bottom: 0;
+  }
 
+  .other-radios {
+    /* position: relative; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* justify-content: space-around; */
+    border-color: #212529;
+    border-style: solid;
+    padding: 1rem 1rem;
+    line-height: 6vh;
+    background-color: white;
+    border-radius: 4px;
+    /* margin-left: 52vw; */
+    /* justify-content: flex-end; */
+  }
   /* ################################################### */
 
 }

@@ -19,13 +19,33 @@ class NavBar extends Component {
     this.props.history.push("/contact")
   }
 
+  goHome = () => {
+    this.props.history.push("/")
+  }
+
+  whichContainer = () => {
+    if (this.props.history.location.pathname === "/"){
+      return "navbar-container"
+    } else {
+      return "other-navbar-container"
+    }
+  }
+
+  whichRadio = () => {
+    if (this.props.history.location.pathname === "/"){
+      return "radios"
+    } else {
+      return "other-radios"
+    }
+  }
+
   render(){
     return(
-      <div className="navbar-container">
-        <div className="radios">
+      <div className={this.whichContainer()}>
+        <div className={this.whichRadio()}>
           <label>
             <input type="radio" className="radio" name="answer"/>
-            <span onClick={this.goToAboutMe}>About Me</span>
+            <span onClick={this.goToAboutMe}>About</span>
           </label>
           <label>
             <input type="radio" className="radio" name="answer"/>
@@ -38,6 +58,10 @@ class NavBar extends Component {
           <label>
             <input type="radio" className="radio" name="answer"/>
             <span onClick={this.goToContact}>Contact</span>
+          </label>
+          <label>
+            <input type="radio" className="radio" name="answer"/>
+            <span onClick={this.goHome}>Home</span>
           </label>
         </div>
       </div>
