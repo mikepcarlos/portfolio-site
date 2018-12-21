@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Typed from 'typed.js';
+// import Typed from 'typed.js';
 import './App.css';
 import NavBar from './components/NavBar.js'
 import { Switch } from 'react-router-dom'
@@ -59,7 +59,7 @@ class App extends Component {
               <Route exact path="/contact" component={Contact} />
             </Switch>
           </div>
-          <NavBar/>
+            <NavBar/>
         </div>
       </Router>
     );

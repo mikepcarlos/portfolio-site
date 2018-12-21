@@ -27,7 +27,8 @@ class NavBar extends Component {
     if (this.props.history.location.pathname === "/"){
       return "navbar-container"
     } else {
-      return "other-navbar-container"
+      let newClass = this.props.history.location.pathname.substring(1)
+      return `${newClass}-container`
     }
   }
 
@@ -35,7 +36,8 @@ class NavBar extends Component {
     if (this.props.history.location.pathname === "/"){
       return "radios"
     } else {
-      return "other-radios"
+      let newClass = this.props.history.location.pathname.substring(1)
+      return `${newClass}-radios`
     }
   }
 
