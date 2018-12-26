@@ -136,14 +136,10 @@ body {
 /* ##################### Nav Bar ################## */
 
 .navbar-container {
-  /* position: fixed; */
   display: inline-block;
   float: right;
-  padding-right: 0.5rem;
+  /* padding-right: 0.5rem; */
   padding-top: 2rem;
-  /* margin-left: 50vw; */
-  /* height: 0; */
-  /* margin-left: 210px; */
 }
 
 .radios {
@@ -167,7 +163,6 @@ body {
   display: inline-block;
   margin-top: -75vh;
   margin-left: 85.8vw;
-  float: right;
   padding-right: 0.1rem;
 }
 
@@ -186,7 +181,8 @@ body {
   /* position: fixed; */
   float: right;
   display: inline-block;
-  margin-top: -55.2vh;
+  /* margin-top: -.2vh; */
+  margin-top: -45vh;
   /* margin-left: 85.4vw; */
   /* margin-top: 10vh; */
   /* float: right; */
@@ -225,7 +221,7 @@ body {
 
 .proj-1 {
   display: inline-flex;
-  border-bottom: 1px solid black;
+  /* border-bottom: 1px solid black; */
   max-width: 80%;
 }
 
@@ -237,7 +233,7 @@ body {
 }
 
 .proj-1-info p {
-  padding-top: 1rem;
+  /* padding-top: 1rem; */
   padding-left: 3rem;
   font-size: 60%;
 }
@@ -247,12 +243,14 @@ body {
   padding-left: 3rem;
   display: flex;
   /* justify-content: space-between; */
-  flex-direction: column;
+  flex-direction: row;
 }
 
 .link-icons-1 img {
-  width: 25%;
-  height: 35%;
+  width: 20%;
+  margin-right: 20%;
+  margin-top: -3%;
+  /* height: 20%; */
 }
 
 .link-icons-2 {
@@ -260,12 +258,14 @@ body {
   padding-left: 3rem;
   display: flex;
   /* justify-content: space-between; */
-  flex-direction: column;
+  flex-direction: row;
 }
 
 .link-icons-2 img {
-  width: 25%;
-  height: 35%;
+  width: 20%;
+  margin-right: 20%;
+  margin-top: -3%;
+  /* height: 20%; */
 }
 
 .proj-2 {
@@ -298,6 +298,157 @@ body {
   padding-left: 3rem;
   font-size: 60%;
 }
+
+.proj-select {
+  max-width: 20%;
+  padding-top: 3rem;
+  /* padding-left: 1rem; */
+}
+
+.proj-nav {
+  display: flex;
+  flex-direction: column;
+  /* padding-bottom: 1.5rem; */
+  padding-top: 3rem;
+  text-align: center;
+  /* border: 2px solid white; */
+}
+
+.proj-select img {
+  width: 55%;
+  margin-bottom: 20%;
+  border: 3px outset #BDBDBD;
+}
+
+.proj-select img:hover {
+  border: 3.5px outset #FEFBC8;
+}
+
+.proj-select h2 {
+  font-family: "Press Start 2P";
+  /* background-color: transparent; */
+}
+
+.proj-align {
+  display: flex;
+  flex-direction: row;
+}
+
+.blogs-container {
+  /* position: fixed; */
+  float: right;
+  display: inline-block;
+  margin-top: -85.2vh;
+  /* margin-left: 85.4vw; */
+  padding-right: 0.5rem;
+}
+
+.blogs-radios {
+  display: flex;
+  flex-direction: column;
+  border-color: #212529;
+  border-style: solid;
+  padding: 1rem 1rem;
+  line-height: 6vh;
+  background-color: white;
+  border-radius: 4px;
+}
+
+.blog-box {
+  padding-top: 5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* margin-left: -10%; */
+  /* margin-left: -50%; */
+  /* margin-bottom: 5%; */
+}
+
+.bloggy label {
+  text-decoration: underline;
+}
+
+.bloggy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  margin-bottom: 10%;
+  /* padding-left: 5%; */
+}
+
+.one {
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.two {
+  border-bottom: 1px solid black;
+}
+
+.three {
+  border-right: 1px solid black;
+}
+
+.bloggy img {
+  width: 10%;
+  padding-bottom: 2rem;
+}
+
+.bloggy p {
+  padding-left: 2rem;
+}
+
+.contact-container {
+  /* position: fixed; */
+  float: right;
+  display: inline-block;
+  /* margin-top: -85.2vh; */
+  /* margin-left: 85.4vw; */
+  padding-right: 0.5rem;
+}
+
+.contact-radios {
+  display: flex;
+  flex-direction: column;
+  border-color: #212529;
+  border-style: solid;
+  padding: 1rem 1rem;
+  line-height: 6vh;
+  background-color: white;
+  border-radius: 4px;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.personal-pages {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.personal-pages img {
+  width: 20%;
+  height: 15%;
+}
+
+/* .blog-2 {
+  display: flex;
+  flex-direction: row;
+}
+
+.blog-3 {
+  display: flex;
+  flex-direction: row;
+}
+
+.blog-4 {
+  display: flex;
+  flex-direction: row;
+} */
 /* ################################## */
 
 .message {
