@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 // import Typed from 'typed.js';
 import './App.css';
-import NavBar from './components/NavBar.js'
+// import NavBar from './components/NavBar.js'
+import Controller from './components/controller_nav.js'
 import { Switch } from 'react-router-dom'
 import { BrowserRouter as Router, Route} from 'react-router-dom'
 import AboutMe from './components/about_me.js'
@@ -59,7 +60,7 @@ class App extends Component {
               <Route exact path="/contact" component={Contact} />
             </Switch>
           </div>
-            <NavBar/>
+            <Controller/>
         </div>
       </Router>
     );

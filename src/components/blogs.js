@@ -5,26 +5,34 @@ const Blogs = () => {
     <div>
       <div className="titles">
         <label>Blogs</label>
-        <div className="blog-box">
-          <div className="bloggy one">
-            <label>Blog #1</label>
+        <div className="blogbox">
+          <div className="blogbox-top">
+            <label>TITLE</label>
+            <label>LINK</label>
+          </div>
+          <div className="bloggy">
             <p>Less is More</p>
-            <img src="/8bitmedium2.png" alt=""/>
+            <a href="https://medium.com/@michaelpcarlos/less-is-more-6b6c150f1b02" target="_blank">
+              <img src="/8bitmedium2.png" alt=""/>
+            </a>
           </div>
-          <div className="bloggy two">
-            <label>Blog #2</label>
+          <div className="bloggy">
             <p>From Humble Beginnings</p>
-            <img src="/8bitmedium2.png" alt=""/>
+            <a href="https://medium.com/@michaelpcarlos/from-humble-beginnings-47d54175cae9" target="_blank">
+              <img src="/8bitmedium2.png" alt=""/>
+            </a>
           </div>
-          <div className="bloggy three">
-            <label>Blog #3</label>
+          <div className="bloggy">
             <p>In with the Old...</p>
-            <img src="/8bitmedium2.png" alt=""/>
+            <a href="https://medium.com/@michaelpcarlos/in-with-the-old-in-with-the-new-f0b4614f7dbf" target="_blank">
+              <img src="/8bitmedium2.png" alt=""/>
+            </a>
           </div>
-          <div className="bloggy four">
-            <label>Blog #4</label>
-            <p>Making the Most of JavaScript</p>
-            <img src="/8bitmedium2.png" alt=""/>
+          <div className="bloggy">
+            <p>The Most of JavaScript</p>
+            <a href="https://medium.com/@michaelpcarlos/making-the-most-of-javascript-aa52a9629634" target="_blank">
+              <img src="/8bitmedium2.png" alt=""/>
+            </a>
           </div>
         </div>
       </div>

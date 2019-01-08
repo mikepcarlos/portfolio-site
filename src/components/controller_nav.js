@@ -1,7 +1,17 @@
 import React, { Component } from 'react';
 import { withRouter } from "react-router";
 
-class NavBar extends Component {
+class Controller extends Component {
+
+  constructor(){
+    super()
+
+    this.state = {
+      hideMe: {
+        display: 'none'
+      }
+    }
+  }
 
   goToAboutMe = () => {
     this.props.history.push("/about")
@@ -22,59 +32,17 @@ class NavBar extends Component {
   goHome = () => {
     this.props.history.push("/")
   }
-
-  whichContainer = () => {
-    if (this.props.history.location.pathname === "/"){
-      return "navbar-container"
-    } else {
-      let newClass = this.props.history.location.pathname.substring(1)
-      return `${newClass}-container`
-    }
-  }
-
-  whichRadio = () => {
-    if (this.props.history.location.pathname === "/"){
-      return "radios"
-    } else {
-      let newClass = this.props.history.location.pathname.substring(1)
-      return `${newClass}-radios`
-    }
-  }
-
   render(){
     return(
-      <div className={this.whichContainer()}>
-        <div className={this.whichRadio()}>
-          <label>
-            <input type="radio" className="radio" name="answer"/>
-            <span onClick={this.goToAboutMe}>About</span>
-          </label>
-          <label>
-            <input type="radio" className="radio" name="answer"/>
-            <span onClick={this.goToProjects}>Projects</span>
-          </label>
-          <label>
-            <input type="radio" className="radio" name="answer"/>
-            <span onClick={this.goToBlogs}>Blogs</span>
-          </label>
-          <label>
-            <input type="radio" className="radio" name="answer"/>
-            <span onClick={this.goToContact}>Contact</span>
-          </label>
-          <label>
-            <input type="radio" className="radio" name="answer"/>
-            <span onClick={this.goHome}>Home</span>
-          </label>
-        </div>
-      </div>
-
-
       <div className="cable">
         <div className="controller">
-          <div className="navcon-box">
-            <p className="NavCon">Nav-Con</p>
-          </div>
+        <div className="navcon-box">
+          <p className="NavCon">Nav-Con</p>
+        </div>
           <div className="centerBlue">
+            <div className="home-icon">
+              <i onClick={this.goHome} className="fas fa-home"></i>
+            </div>
             <div className="centerLeft">
             </div>
             <div className="centerRight">
@@ -116,21 +84,25 @@ class NavBar extends Component {
             </div>
             <div className="backButton1Center">
               <div className="cornerLeftBack1">
-                <div className="cornerLeft1">
+                <div onClick={this.goToProjects} className="cornerLeft1">
+                  <p>P</p>
                 </div>
               </div>
               <div className="cornerRightBack1">
-                <div className="cornerRight1">
+                <div onClick={this.goToBlogs} className="cornerRight1">
+                  <p>B</p>
                 </div>
               </div>
             </div>
             <div className="backButton2Center">
               <div className="cornerLeftBack2">
-                <div className="cornerLeft2">
+                <div onClick={this.goToAboutMe} className="cornerLeft2">
+                  <p>A</p>
                 </div>
               </div>
               <div className="cornerRightBack2">
-                <div className="cornerRight2">
+                <div onClick={this.goToContact} className="cornerRight2">
+                  <p>C</p>
                 </div>
               </div>
             </div>
@@ -139,6 +111,7 @@ class NavBar extends Component {
       </div>
     )
   }
+
 }
 
-export default withRouter(NavBar)
+export default withRouter(Controller)
