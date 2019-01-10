@@ -6,18 +6,18 @@ const Contact = () => {
       <div className="titles">
         <label>Contact</label>
         <div className="contact-info">
-          <img className="gameover" src="/game_over.gif" alt=""/>
           <p>Email: michaelpcarlos@gmail.com</p>
           <p>Click below for reference</p>
+          <img className="gameover" src="/game_over.gif" alt=""/>
         </div>
         <div className="personal-pages">
-          <a href="https://www.linkedin.com/in/michael-carlos/" target="_blank">
+          <a href="https://www.linkedin.com/in/michael-carlos/">
             <img src="/linkedin.png" alt=""/>
           </a>
-          <a href="https://github.com/mikepcarlos" target="_blank">
+          <a href="https://github.com/mikepcarlos">
             <img src="/GitHubby.png" alt=""/>
           </a>
-          <a href="https://medium.com/@michaelpcarlos" target="_blank">
+          <a href="https://medium.com/@michaelpcarlos">
             <img src="/8bitmedium2.png" alt=""/>
           </a>
         </div>

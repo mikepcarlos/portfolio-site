@@ -22,16 +22,15 @@ class Projects extends Component {
       <div className="proj">
         <div className="proj-info">
           <label>Palis</label>
-          <p>Built with: React // JavaScript // Rails // CSS // HTML</p>
           <p className="proj-desc">Search an artist, movie, band, television show, etc. & this application provides similar genre based options.</p>
           <div className="link-icons">
-            <a href="https://www.youtube.com/watch?v=pcJhff5PVvM&t=1s" target="_blank">
+            <a href="https://www.youtube.com/watch?v=pcJhff5PVvM&t=1s">
               <img className="youtube-icon" src="/youtube_icon.png" alt=""/>
             </a>
-            <a href="https://github.com/mikepcarlos/palis-backend" target="_blank">
+            <a href="https://github.com/mikepcarlos/palis-backend">
               <img className="githubby" src="/gittyback.svg" alt=""/>
             </a>
-            <a href="https://github.com/mikepcarlos/palis-frontend" target="_blank">
+            <a href="https://github.com/mikepcarlos/palis-frontend">
               <img className="githubby" src="/gittyfront.png" alt=""/>
             </a>
           </div>
@@ -40,13 +39,12 @@ class Projects extends Component {
       <div className="proj">
         <div className="proj-info">
           <label>Gttr</label>
-          <p>Built with: Rails // CSS // HTML </p>
           <p className="proj-desc">A web app that allows users the ability to create outfits based on different articles of clothing and post them to their profile, showcasing that users style.</p>
           <div className="link-icons">
-            <a href="https://www.youtube.com/watch?v=jtLFmWrvudU&t=1s" target="_blank">
+            <a href="https://www.youtube.com/watch?v=jtLFmWrvudU&t=1s">
               <img className="youtube-icon" src="/youtube_icon.png" alt=""/>
             </a>
-            <a href="https://github.com/mikepcarlos/gttr-mod2-project" target="_blank">
+            <a href="https://github.com/mikepcarlos/gttr-mod2-project">
               <img className="githubby" src="/gittyback.svg" alt=""/>
             </a>
           </div>

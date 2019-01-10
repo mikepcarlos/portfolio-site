@@ -7,7 +7,7 @@ class Home extends Component {
     super()
 
     this.state = {
-      introPhrase: ["Hello there! Glad to meet you. Welcome to the world of my portfolio.Select where you'd like to go."]
+      introPhrase: ["Welcome to the world of my portfolio. Use the Nav-Con to select where you'd like to go. P leads to the projects page. A leads to the about me page. B leads to the blogs page. C leads to the contact page."]
     }
   }
 
@@ -31,7 +31,7 @@ class Home extends Component {
   render() {
     return (
       <div className="home">
-        <div className="titles">
+        <div className="home-titles">
           <label>Michael Carlos</label>
           <p>Full Stack Web Developer</p>
         </div>
@@ -41,7 +41,7 @@ class Home extends Component {
         <div className="intro-container">
           <div className="container is-dark with-title">
             <p className="title">Welcome!</p>
-            <p ref={(el) => { this.el = el; }}></p>
+            <p className="intro-message" ref={(el) => { this.el = el; }}></p>
           </div>
         </div>
       </div>
