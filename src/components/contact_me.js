@@ -11,13 +11,13 @@ const Contact = () => {
           <img className="gameover" src="/game_over.gif" alt=""/>
         </div>
         <div className="personal-pages">
-          <a href="https://www.linkedin.com/in/michael-carlos/">
+          <a href="https://www.linkedin.com/in/michael-carlos/" target="_blank">
             <img src="/linkedin.png" alt=""/>
           </a>
-          <a href="https://github.com/mikepcarlos">
+          <a href="https://github.com/mikepcarlos" target="_blank">
             <img src="/GitHubby.png" alt=""/>
           </a>
-          <a href="https://medium.com/@michaelpcarlos">
+          <a href="https://medium.com/@michaelpcarlos" target="_blank">
             <img src="/8bitmedium2.png" alt=""/>
           </a>
         </div>

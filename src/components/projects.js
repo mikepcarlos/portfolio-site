@@ -24,13 +24,13 @@ class Projects extends Component {
           <label>Palis</label>
           <p className="proj-desc">Search an artist, movie, band, television show, etc. & this application provides similar genre based options.</p>
           <div className="link-icons">
-            <a href="https://www.youtube.com/watch?v=pcJhff5PVvM&t=1s">
+            <a href="https://www.youtube.com/watch?v=pcJhff5PVvM&t=1s" target="_blank">
               <img className="youtube-icon" src="/youtube_icon.png" alt=""/>
             </a>
-            <a href="https://github.com/mikepcarlos/palis-backend">
+            <a href="https://github.com/mikepcarlos/palis-backend" target="_blank">
               <img className="githubby" src="/gittyback.svg" alt=""/>
             </a>
-            <a href="https://github.com/mikepcarlos/palis-frontend">
+            <a href="https://github.com/mikepcarlos/palis-frontend" target="_blank">
               <img className="githubby" src="/gittyfront.png" alt=""/>
             </a>
           </div>
@@ -41,10 +41,10 @@ class Projects extends Component {
           <label>Gttr</label>
           <p className="proj-desc">A web app that allows users the ability to create outfits based on different articles of clothing and post them to their profile, showcasing that users style.</p>
           <div className="link-icons">
-            <a href="https://www.youtube.com/watch?v=jtLFmWrvudU&t=1s">
+            <a href="https://www.youtube.com/watch?v=jtLFmWrvudU&t=1s" target="_blank">
               <img className="youtube-icon" src="/youtube_icon.png" alt=""/>
             </a>
-            <a href="https://github.com/mikepcarlos/gttr-mod2-project">
+            <a href="https://github.com/mikepcarlos/gttr-mod2-project" target="_blank">
               <img className="githubby" src="/gittyback.svg" alt=""/>
             </a>
           </div>
