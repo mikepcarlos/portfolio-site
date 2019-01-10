@@ -23,7 +23,7 @@ const Blogs = () => {
             </a>
           </div>
           <div className="bloggy">
-            <p>In with the Old...</p>
+            <p>In with the Old..</p>
             <a href="https://medium.com/@michaelpcarlos/in-with-the-old-in-with-the-new-f0b4614f7dbf">
               <img src="/8bitmedium2.png" alt=""/>
             </a>
